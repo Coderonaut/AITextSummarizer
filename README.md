@@ -1,9 +1,9 @@
 # AITextSummarizer
 Hello! This is an NLP-based AI Text Summarizer Project developed by me.
 
-⚡ SummarizeAI Pro (# v4.0)
+⚡ SummarizeAI Pro
 
-Introducing version 4.0 of AI Text Summarizer; A modern, production-grade Natural Language Processing (NLP) web application built with Python.
+Introducing a new version of AI Text Summarizer; A modern, production-grade Natural Language Processing (NLP) web application built with Python.
 **SummarizeAI Pro** utilizes an extractive **TF-IDF (Term Frequency-Inverse Document Frequency)** algorithm to generate concise, 
 contextually relevant summaries from raw text or uploaded documents (`.txt` and `.pdf`), complete with multi-language translation support.
 
@@ -39,7 +39,7 @@ AITextSummarizer/
 └── README.md           # Documentation
 ## 🚀 Local Installation & Setup
 Clone the repository:
-git clone [https://github.com/YOUR_GITHUB_USERNAME/AITextSummarizer.git](https://github.com/YOUR_GITHUB_USERNAME/AITextSummarizer.git)
+git clone [https://github.com/Coderonaut/AITextSummarizer.git](https://github.com/Coderonaut/AITextSummarizer.git)
 cd AITextSummarizer
 
 Install dependencies:
@@ -48,4 +48,9 @@ Run the Streamlit app:
 streamlit run app.py
 
 ⚙️ How the TF-IDF Algorithm Works
-Unlike simple word-counting algorithms that often favor introductory "hook" sentences, SummarizeAI Pro scores sentences based on information density:Preprocessing: Removes citations ([1], [2]) and flattens excess whitespace via regular expressions.Tokenization: Splits text into sentences and individual words using NLTK tokenizers.TF-IDF Matrix Generation: Evaluates word importance across sentences. Unique, domain-specific keywords receive higher scores, while generic words are down-weighted.Length Normalization: Sentence scores are normalized against sentence length to prevent unusually long sentences from skewing results.Ordered Extraction: Extracts the top $N$ scoring sentences and restores their original chronological order for natural reading flow.
+Unlike simple word-counting algorithms that often favor introductory "hook" sentences, SummarizeAI Pro scores sentences based on information density:
+Preprocessing: Removes citations ([1], [2]) and flattens excess whitespace via regular expressions.
+Tokenization: Splits text into sentences and individual words using NLTK tokenizers.
+TF-IDF Matrix Generation: Evaluates word importance across sentences. Unique, domain-specific keywords receive higher scores, while generic words are down-weighted.
+Length Normalization: Sentence scores are normalized against sentence length to prevent unusually long sentences from skewing results.
+Ordered Extraction: Extracts the top $N$ scoring sentences and restores their original chronological order for natural reading flow.
